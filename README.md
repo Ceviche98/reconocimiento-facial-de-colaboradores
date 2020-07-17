@@ -34,6 +34,10 @@ Esta base contiene imagenes de personas del Center for Signal and Image Processi
 ![alt text](https://github.com/vcarlosrb/reconocimiento-facial-de-colaboradores/blob/master/Implementacion%20del%20sistema/assets/Georgia-Tech-Faces-dataset.png?raw=true)
 
 ## Implementación del proyecto
+En este proyecto se han implementado los dos modelos: Facenet y Siamese Network. Se decidio entrenar al modelo de Siamese Network desde cero, debido a que queriamos utilizar imagenes a colores en un tamaño de imagen cercano a los 160x160 y otros modelos utilizaban imagenes de menor tamaño. Con respecto a Facenet, los resultados de identificacion que dio desde el principio fueron muy buenos por lo que no nos vimos en la necesidad de reentrenarlo.
 
+En el notebook **Face identification.ipynb** que se encuentra dentro de la carpeta **Implementacion del Sistema**, se ha desarrollado un programa realizar la identificacion de usuarios utilizando Facenet. Primero, se realiza la deteccion del rostro utilizando la función Haarcascades de OpenCV.Luego, se se pasa la imagen a una representacion vectorial utilizando el modelo Facenet. A partir de esta representacion, se calcula la distancia de la imagen con las otras imagenes de los usuarios. Dependiendo de la distancia resultante y el threshold, se puede identificar al usuario o dejarlo como usuario no identificado.
+
+Para realizar lo anteriormente mencionado se necesita utilizar la funcion **detect_face_realtime** 
 
 
