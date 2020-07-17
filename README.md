@@ -40,4 +40,4 @@ En el notebook **Face identification.ipynb** que se encuentra dentro de la carpe
 
 Para realizar lo anteriormente mencionado se necesita utilizar la funcion **detect_face_realtime** 
 
-
+Con respecto a la Red Siamesa, su entrenamiento y prediccion se encuentra dentro del notebook **[Experimentación]Redes Siamesas.ipynb**. Sin embargo, decidimos utilizar Facenet debido a que mostro mejores resultados en la identificacion de rostros de los participantes de este proyecto. Es un resultado esperado, dado que el dataset que escogimos no es igual de grande al utilizado por Facenet y que utilizar una mayor cantidad de imagenes conllevaria mucho tiempo de procesamiento. Para futuros trabajos, se podria entrenar la Siamese Network con el mismo dataset(MS-Celeb-1M dataset) para comparar de mejor manera los dos modelos.
